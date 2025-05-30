@@ -11,10 +11,13 @@ import Countrylist from './components/Countrylist.jsx';
 import City from './components/City.jsx';
 import Form from './components/Form.jsx';
 import { CitiesProvider,useCities } from './components/context/CitiesContext.jsx';
+import {FakeAuth } from './components/context/fakeauth.jsx';
 const baseurl="http://localhost:3001";
+
 function App() {
   
-  return (<CitiesProvider>
+  return (<FakeAuth>
+  <CitiesProvider>
     <BrowserRouter>
     <Routes>
       <Route index element={<HomePage />} />
@@ -36,6 +39,7 @@ function App() {
     </Routes>
   </BrowserRouter>
   </CitiesProvider>
+  </FakeAuth>
   )
 }
 

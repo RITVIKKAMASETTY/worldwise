@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
-      "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      "id": "73930385"
-    },
-    {
       "id": "879c",
       "cityName": "Castello de la Plana",
       "country": "ES",
@@ -25,18 +13,6 @@
       }
     },
     {
-      "id": "6216",
-      "cityName": "Castello de la Plana",
-      "country": "ES",
-      "emoji": "🇪🇸",
-      "date": "2025-05-25T02:07:11.957Z",
-      "notes": "",
-      "position": {
-        "lat": 40.01001137103837,
-        "lng": -0.06867048828553823
-      }
-    },
-    {
       "id": "8f4e",
       "cityName": "Useras",
       "country": "ES",
@@ -46,6 +22,54 @@
       "position": {
         "lat": 40.16954180345568,
         "lng": -0.1580268570784371
+      }
+    },
+    {
+      "id": "8a53",
+      "cityName": "Castello de la Plana",
+      "country": "ES",
+      "emoji": "🇪🇸",
+      "date": "2025-05-26T17:47:29.703Z",
+      "notes": "",
+      "position": {
+        "lat": 40.01526866085692,
+        "lng": -0.024214933757549243
+      }
+    },
+    {
+      "id": "9b0c",
+      "cityName": "Castello de la Plana",
+      "country": "ES",
+      "emoji": "🇪🇸",
+      "date": "2025-05-26T17:47:34.020Z",
+      "notes": "",
+      "position": {
+        "lat": 39.98727080736597,
+        "lng": -0.049446483133186454
+      }
+    },
+    {
+      "id": "0c93",
+      "cityName": "Leninskoye",
+      "country": "RU",
+      "emoji": "🇷🇺",
+      "date": "2025-05-29T17:57:59.023Z",
+      "notes": "",
+      "position": {
+        "lat": 58.445135756172505,
+        "lng": 47.362156418692365
+      }
+    },
+    {
+      "id": "438f",
+      "cityName": "Castello de la Plana",
+      "country": "ES",
+      "emoji": "🇪🇸",
+      "date": "2025-05-29T17:58:52.759Z",
+      "notes": "",
+      "position": {
+        "lat": 40.00788037217708,
+        "lng": -0.041516317233736284
       }
     }
   ]

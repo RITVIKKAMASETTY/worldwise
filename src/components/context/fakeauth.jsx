@@ -1,4 +1,4 @@
-import {React,createContext, useContext, useReducer} from 'react'
+import {React,createContext, useContext, useReducer,useEffect} from 'react'
 const FAKE_USER = {
     name: "Jack",
     email: "jack@example.com",
@@ -6,19 +6,19 @@ const FAKE_USER = {
     avatar: "https://i.pravatar.cc/100?u=zz",
   };
 const Authcontext=createContext();
-const initailState={user:null,isauthenciated:false};
+const initailState={user:null,isauthenticated:false};
 function reducer(state,action){
     switch(action.type){
         case "login":
-            return{...state,user:action.payload,isauthenciated:true};
+            return{...state,user:action.payload,isauthenticated:true};
         case "logout":
-            return{...state,user:null,isauthenciated:false};
+            return{...state,user:null,isauthenticated:false};
         default:
             throw new Error("i dont know what to do")
     }
 }
-function FakeAuth({a}) {
-    const [{user,isauthenciated},dispatch]=useReducer(reducer,initailState);
+function FakeAuth({children}) {
+    const [{user,isauthenticated},dispatch]=useReducer(reducer,initailState);
     function login(email,password)
     {if(email===FAKE_USER.email&&password===FAKE_USER.password){
         dispatch({type:"login",payload:FAKE_USER});
@@ -27,7 +27,7 @@ function FakeAuth({a}) {
         dispatch({type:"logout"});
     }
   return (
-   <Authcontext.Provider>{a}
+   <Authcontext.Provider value={{FakeAuth, user, login, logout,isauthenticated}}>{children}
    </Authcontext.Provider>
   )
 }
@@ -35,6 +35,6 @@ function useAuth(){
     const context=useContext(Authcontext);
     if(context===undefined){
         throw new Error("useAuth must be defined within a AuthProvider");
-    }
+    }return context;
 }
 export {FakeAuth,useAuth};
