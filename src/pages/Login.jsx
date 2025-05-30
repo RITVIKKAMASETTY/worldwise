@@ -20,7 +20,7 @@ export default function Login() {
    */
 /*******  7a1c7e66-a729-490b-8357-d319946aecee  *******/  
 
-useEffect(function(){if(isauthenticated){navigate("/app/cities")}},[isauthenticated,navigate]);
+useEffect(function(){if(isauthenticated){navigate("/app",{replace:true})}},[isauthenticated,navigate]);
 function handlesubmit(e){
   e.preventDefault();
   if(email&&password)login(email,password);

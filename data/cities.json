@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "id": "879c",
-      "cityName": "Castello de la Plana",
-      "country": "ES",
-      "emoji": "🇪🇸",
-      "date": "2025-05-25T02:05:39.840Z",
-      "notes": "",
-      "position": {
-        "lat": 40.02301363566847,
-        "lng": -0.03931045532226563
-      }
-    },
-    {
       "id": "8f4e",
       "cityName": "Useras",
       "country": "ES",
@@ -37,18 +25,6 @@
       }
     },
     {
-      "id": "9b0c",
-      "cityName": "Castello de la Plana",
-      "country": "ES",
-      "emoji": "🇪🇸",
-      "date": "2025-05-26T17:47:34.020Z",
-      "notes": "",
-      "position": {
-        "lat": 39.98727080736597,
-        "lng": -0.049446483133186454
-      }
-    },
-    {
       "id": "0c93",
       "cityName": "Leninskoye",
       "country": "RU",
@@ -61,15 +37,15 @@
       }
     },
     {
-      "id": "438f",
+      "id": "59bb",
       "cityName": "Castello de la Plana",
       "country": "ES",
       "emoji": "🇪🇸",
-      "date": "2025-05-29T17:58:52.759Z",
+      "date": "2025-05-30T07:40:30.672Z",
       "notes": "",
       "position": {
-        "lat": 40.00788037217708,
-        "lng": -0.041516317233736284
+        "lat": 40.00920936862171,
+        "lng": -0.02763748168945313
       }
     }
   ]

@@ -12,8 +12,8 @@ import City from './components/City.jsx';
 import Form from './components/Form.jsx';
 import { CitiesProvider,useCities } from './components/context/CitiesContext.jsx';
 import {FakeAuth } from './components/context/fakeauth.jsx';
+import Protectedroute from './pages/Protectedroute.jsx';
 const baseurl="http://localhost:3001";
-
 function App() {
   
   return (<FakeAuth>
@@ -22,7 +22,7 @@ function App() {
     <Routes>
       <Route index element={<HomePage />} />
 
-      <Route path="/app" element={<Apployout />}>
+      <Route path="/app" element={<Protectedroute><Apployout /></Protectedroute>}>
 
       <Route index element={<Navigate replace to="cities"/>}/>
       <Route path="/app/map" element={<p>maps</p>}/>
